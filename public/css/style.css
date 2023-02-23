@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+}
+body{
+    background-color: #a72222;
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    transition: 0.2s ease-in-out;
+    z-index: 10;
+}
+.navlink:hover{
+    opacity: 50%;
+}
+.nav-active {
+    background-color:#343434;
+    box-shadow: 0px 0px 12px 1px #1b1b1b96;
+}
+.st0{
+    fill: #ffffff;
+}
+.scrolled-down{
+    background-color: rgb(60, 60, 60);
+}
+a, a:hover, a:visited{
+    color:white;
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.border-bottom{
+    border-bottom: solid 5px #a72222;
+}
+.page-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    width: 200px;
+    height: 20rem;
+    background-color: #ffffff;
+}
+
+.bg-img{
+    display: grid;
+    background-size:cover;
+    background-position: center center;
+    background-image: url(../imgs/cover-photo.png);
+    height: 20rem;
+    place-items: center;
+}
+.welcome{
+    font-family: 'Roboto Slab', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0rem 1rem;
+}
+.store-name{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.page-links{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20rem;
+    font-weight: 500;
+
+}
+
+/* scrollbar styling starts here */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(60, 60, 60);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(46, 46, 46);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(125, 125, 125);
+}
+/* scrollbar styling ends here */
+.svg-container{
+    position: relative;
+}
+.svg-container::after{
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    background-color: #a72222;
+    width: 15px;
+    height: 15px;
+    content: "0";
+    font-size: .6rem;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 100%;
+}
+footer{
+    font-size: .7rem;
+    background-color: #0e0e0e;  
+}
+.footer-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    /* styles for browsers between 481px and 768px */
+    
+}
+
+@media only screen and (max-width: 480px) {
+    /* styles for browsers smaller than 480px */
+    
+}
+
+

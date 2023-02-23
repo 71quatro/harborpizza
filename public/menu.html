@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/harbor-pizza-logo-image.png" type="image/x-icon">
+    <title>Harbor Pizza</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="store-name center"><a class="navlink" href="index.html">Harbor Pizza</a></div>
+        <div class="menu-items">
+            <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="page-links">
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="border-bottom navlink" href="menu.html">Menu</a></li>
+                <li><a class="navlink" href="contact.html">Contact</a></li>
+                <li>
+                    <div id="shoppingCartIcon" class="svg-container">
+                        <svg height="20px" width="20px" 
+                            viewBox="0 0 512 512"  xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M486.998,140.232c-8.924-12.176-22.722-19.878-37.785-21.078l-311.616-24.68l-5.665-32.094
+                                c-5.179-29.305-28.497-51.998-57.932-56.352l-5.662-0.845L34.65,0.185c-9.385-1.378-18.118,5.09-19.51,14.475
+                                c-1.395,9.393,5.086,18.127,14.471,19.514v-0.008l39.357,5.834l0.009,0.026c14.788,2.164,26.526,13.586,29.131,28.324
+                                l53.338,302.302c5.005,28.375,29.647,49.047,58.461,49.056h219.192c9.49,0,17.176-7.694,17.176-17.172
+                                c0-9.486-7.686-17.18-17.176-17.18H209.906c-12.133,0.009-22.536-8.725-24.642-20.672l-7.461-42.299h244.342
+                                c24.189,0,45.174-16.691,50.606-40.262l22.967-99.523C499.118,167.887,495.93,152.424,486.998,140.232z"/>
+                            <path class="st0" d="M223.012,438.122c-20.402,0-36.935,16.554-36.935,36.948c0,20.394,16.533,36.931,36.935,36.931
+                                c20.401,0,36.944-16.537,36.944-36.931C259.955,454.676,243.413,438.122,223.012,438.122z"/>
+                            <path class="st0" d="M387.124,438.122c-20.406,0-36.935,16.554-36.935,36.948c0,20.394,16.529,36.931,36.935,36.931
+                                c20.402,0,36.944-16.537,36.944-36.931C424.068,454.676,407.526,438.122,387.124,438.122z"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <div class="hide" id="shopping-cart-contents">
+                        <div class="shopping-cart-items">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="checkout-button-container">
+                            <button type="submit" onclick="checkout()">Checkout</button>
+                        </div>
+                    </div>                     
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="welcome-message">
+        <div class="bg-img">
+            <h1 class="welcome">Menu</h1>
+        </div>
+    </section>
+    
+    <main class="menu-items">
+        <div class="menu-items-container">
+            <div class="all-items-container">
+                <div class="build-your-own-pizza item-container">
+                    <div class="byop-img item">
+                        <img class="item-img" src="./imgs/Pepperoni.jpg" alt="byop pizza">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Build Your Own Pizza</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Be the Picasso of your pizza night. Build your pizza your way with our wide selection of toppings.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-custom-pizza" ><span class="price">$6.99</span> | START BUILDING</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cheese-pizza item-container">
+                    <div class="cheese-img item">
+                        <img class="item-img" src="./imgs/cheese-pizza.png" alt="cheese pizza">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Cheese Pizza</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Simple and satisfying, our classic cheese pizza is a timeless masterpiece of gooey mozzarella and zesty tomato sauce.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-cheese-pizza" ><span class="price">$6.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pepperoni-pizza item-container">
+                    <div class="pepperoni-img item">
+                        <img class="item-img" src="./imgs/Pepperoni.jpg" alt="pepperoni pizza">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Pepperoni Pizza</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Our classic pepperoni pizza is the perfect blend of gooey mozzarella cheese, zesty tomato sauce, and spicy pepperoni.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-pepperoni-pizza" ><span class="price">$7.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supreme-pizza item-container">
+                    <div class="supreme-pizza-img item">
+                        <img class="item-img" src="./imgs/supreme-pizza.jpg" alt="supreme pizza">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Supreme Pizza</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Indulge in a pizza loaded with pepperoni, ham, sausage, mushrooms, olives, bell peppers, onions, and extra cheese.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-supreme-pizza" ><span class="price">$14.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meatlover-pizza item-container">
+                    <div class="meatlover-pizza-img item">
+                        <img class="item-img" src="./imgs/Meatlover.jpg" alt="meatlover pizza">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Meat Lover's Pizza</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Satisfy your cravings with our classic Meat Lover's pizza, topped with pepperoni, ham, Italian sausage, bacon, and extra cheese.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-meatlover-pizza" ><span class="price">$11.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="veggie-pizza item-container">
+                    <div class="veggie-pizza-img item">
+                        <img class="item-img" src="./imgs/veggie-pizza.png" alt="vegetarian pizza">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Vegetarian Pizza</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Enjoy a healthier pizza with our flavorful toppings of mushrooms, olives, green bell peppers, onions, and extra cheese.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-vegetarian-pizza" ><span class="price">$11.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hawaiian-pizza item-container">
+                    <div class="hawaiian-pizza-img item">
+                        <img class="item-img" src="./imgs/hawaiian-pizza.jpg" alt="hawaiian pizza">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Hawaiian Pizza</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Transport your taste buds to the tropics with our Hawaiian pizza featuring ham, pineapple, and extra cheese.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-hawaiian-pizza" ><span class="price">$8.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calzone item-container">
+                    <div class="calzone-img item">
+                        <img class="item-img" src="./imgs/calzone.jpg" alt="calzone">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Calzone</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Imagine a golden, crispy pizza dough folded in half to create a pocket filled with a delicious blend of ingredients.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-calzone" ><span class="price">$6.99</span> | START BUILDING</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spaghetti item-container">
+                    <div class="spaghetti-img item">
+                        <img class="item-img" src="./imgs/spagetti_meatball.png" alt="spaghetti">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Spaghetti and Meatballs</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Our spaghetti, with our homemade meatball's, is the perfect choice for foodies and comfort-seekers alike.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-spaghetti" ><span class="price">$6.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lasagna item-container">
+                    <div class="lasagna-img item">
+                        <img class="item-img" src="./imgs/lasagna.png" alt="lasagna">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Lasagna</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Our lasagna is an absolutely irresistible and comforting Italian classic that's sure to delight your taste buds!
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-lasagna"><span class="price">$6.99</span> | Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ravioli item-container">
+                    <div class="ravioli-img item">
+                        <img class="item-img" src="./imgs/ravioli.jpg" alt="raviolo">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Ravioli</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Perfectly tender pasta pockets filled with a delicious blend of ricotta cheese and spinach, all coated in a savory sauce.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-ravioli" ><span class="price">$6.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sandwich item-container">
+                    <div class="sandwich-img item">
+                        <img class="item-img" src="./imgs/parm-sandwich.png" alt="sandwich">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Sandwich</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Artisanal bread, cured meats, fresh cheese, and seasonal vegetables come together for the perfect balance of flavors.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-sandwich" ><span class="price">$4.99</span> | START BUILDING</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="salad item-container">
+                    <div class="salad-img item">
+                        <img class="item-img" src="./imgs/salad.png" alt="salad">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Salad</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Our salads are fresh, vibrant, and full of flavor, made with locally sourced, organic ingredients to ensure maximum taste.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-salad" ><span class="price">$3.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wings item-container">
+                    <div class="wings-img item">
+                        <img class="item-img" src="./imgs/wings.png" alt="wings">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Wings</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Our classic buffalo wings are crispy and tangy, perfect to pair with our delicious pizzas. Enjoy with friends or family!
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-wings" ><span class="price">$7.99</span> | Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+                <div class="drinks item-container">
+                    <div class="drinks-img item">
+                        <img class="item-img" src="./imgs/soda-can.jpg" alt="someone holding a can of coke">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Drinks</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Complement your meal with a cold, refreshing drink, perfect to wash down our delicious pizzas.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-drinks" >VIEW MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="extras item-container">
+                    <div class="extras-img item">
+                        <img class="item-img" src="./imgs/slice.jpg" alt="pasta">
+                    </div>
+                    <div class="item-details-container">
+                        <div class="item-name-container">
+                            <h2 class="item-name">Extras</h2>
+                        </div>
+                        <div class="item-details-and-button">
+                            <div class="item-details">
+                                Enhance your pizza experience with our delicious extras, from slice's of pizza to sides of ranch and savory garlic bread.
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart-btn" type="submit" id="item-extras" >VIEW MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="pizza-builder-section hide">
+            <div class="pizza-builder">
+                <div class="toppings-selection">
+                    <div class="label">
+                        <h3 class="toppings-label">Select all the toppings for your pizza:</h3>
+                    </div>
+                    <div class="options">
+                        <label class="top"><input type="checkbox" name="toppings" id="pepperoni" value="pepperoni" ><div class="toppings-option">Pepperoni</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="ham" value="ham"><div class="toppings-option">Ham</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="sausage" value="sausage"><div class="toppings-option">Italian Sausage</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="bacon" value="bacon"><div class="toppings-option">Bacon</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="chicken" value="chicken"><div class="toppings-option">Chicken</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="mushroom" value="mushroom"><div class="toppings-option">Mushrooms</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="olive" value="olive"><div class="toppings-option">Black Olives</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="bell-pepper" value="green bell pepper"><div class="toppings-option">Green Bell Pepper</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="onion" value="onion"><div class="toppings-option">Onion</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="jalapeno" value="jalapeno"><div class="toppings-option">Jalape&ntilde;o</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="pineapple" value="pineapple"><div class="toppings-option">Pineapple</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="extra-cheese" value="extra cheese"><div class="toppings-option">Extra Cheese</div></label>
+                    </div>
+                </div>
+                <div class="navButtons">
+                    <div class="backToMainMenuBtn">
+                        <button onclick="goBackToMenu()">Go to Menu</button>
+                    </div>
+                    <div class="add-to-cart-button">
+                        <button onclick="addPizzaToCart()">Add to Cart</button>
+                    </div>
+                </div>
+        </section>
+        <section class="calzone-builder-section hide">
+            <div class="calzone-builder">
+                <div class="toppings-selection">
+                    <div class="label">
+                        <h3 class="toppings-label">Select all the toppings for your calzone:</h3>
+                    </div>
+                    <div class="options">
+                        <label class="top"><input type="checkbox" name="toppings" id="pepperoni" value="pepperoni" ><div class="toppings-option">Pepperoni</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="ham" value="ham"><div class="toppings-option">Ham</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="sausage" value="sausage"><div class="toppings-option">Italian Sausage</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="bacon" value="bacon"><div class="toppings-option">Bacon</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="chicken" value="chicken"><div class="toppings-option">Chicken</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="mushroom" value="mushroom"><div class="toppings-option">Mushrooms</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="olive" value="olive"><div class="toppings-option">Black Olives</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="bell-pepper" value="green bell pepper"><div class="toppings-option">Green Bell Pepper</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="onion" value="onion"><div class="toppings-option">Onion</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="jalapeno" value="jalapeno"><div class="toppings-option">Jalape&ntilde;o</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="pineapple" value="pineapple"><div class="toppings-option">Pineapple</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="extra-cheese" value="extra cheese"><div class="toppings-option">Extra Cheese</div></label>
+                    </div>
+                </div>
+                <div class="navButtons">
+                    <div class="backToMainMenuBtn">
+                        <button onclick="goBackToMenu()">Go to Menu</button>
+                    </div>
+                    <div class="add-to-cart-button">
+                        <button onclick="addCalzoneToCart()">Add to Cart</button>
+                    </div>
+                </div>
+        </section>
+        <section class="sandwich-builder-section hide">
+            <div class="sandwich-builder">
+                <div class="protein-selection">
+                    <div class="label">
+                        <h3 class="protein-label">Select your protein:</h3>
+                    </div>
+                    <div class="options">
+                        <label class="top"><input class="pr"type="radio" name="toppings" id="ham" value="ham" ><div class="toppings-option">Ham</div></label>
+                        <label class="top"><input class="pr"type="radio" name="toppings" id="pastrami" value="pastrami" ><div class="toppings-option">Pastrami</div></label>
+                        <label class="top"><input class="pr"type="radio" name="toppings" id="meatball" value="meatball" ><div class="toppings-option">Meatballs</div></label>
+                        <label class="top"><input class="pr"type="radio" name="toppings" id="chicken-parmesan" value="chicken parmesan" ><div class="toppings-option">Chicken Parmesan</div></label>
+                    </div>
+                </div>
+                <div class="vegetable-selection">
+                    <div class="label">
+                        <h3 class="vegetable-label">Select your vegetables:</h3>
+                    </div>
+                    <div class="options">
+                        <label class="top"><input type="checkbox" name="toppings" id="lettuce" value="lettuce" ><div class="toppings-option">Lettuce</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="tomatoe" value="tomatoe" ><div class="toppings-option">Tomatoes</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="onion" value="onion" ><div class="toppings-option">Onions</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="banana-pepper" value="banana pepper" ><div class="toppings-option">Banana Peppers</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="pickle" value="pickle" ><div class="toppings-option">Pickles</div></label>
+                        <label class="top"><input type="checkbox" name="toppings" id="jalapeno" value="jalapeno" ><div class="toppings-option">Jalape&ntilde;o</div></label>
+                    </div>
+                </div>
+                <div class="navButtons">
+                    <div class="backToMainMenuBtn">
+                        <button onclick="goBackToMenu()">Go to Menu</button>
+                    </div>
+                    <div class="add-to-cart-button">
+                        <button onclick="addSandwichToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="endorsement">This Site Was Designed And Developed By <a href="#">Arya Namiranian</a></p>
+            <p class="copyright">&#169; 2023 Harbor Pizza. All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    <script src="./app.js"></script>
+    <script src="./order.js"></script>
+</body>
+</html>

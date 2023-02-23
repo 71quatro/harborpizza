@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/harbor-pizza-logo-image.png" type="image/x-icon">
+    <title>Harbor Pizza</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="store-name"><a class="navlink"href="index.html">Harbor Pizza</a></div>
+        <div class="menu-items">
+            <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="page-links">
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="menu.html">Menu</a></li>
+                <li><a class="border-bottom navlink" href="contact.html">Contact</a></li>
+                <li>
+                    <div id="shoppingCartIcon" class="svg-container">
+                        <svg height="20px" width="20px" 
+                            viewBox="0 0 512 512"  xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M486.998,140.232c-8.924-12.176-22.722-19.878-37.785-21.078l-311.616-24.68l-5.665-32.094
+                                c-5.179-29.305-28.497-51.998-57.932-56.352l-5.662-0.845L34.65,0.185c-9.385-1.378-18.118,5.09-19.51,14.475
+                                c-1.395,9.393,5.086,18.127,14.471,19.514v-0.008l39.357,5.834l0.009,0.026c14.788,2.164,26.526,13.586,29.131,28.324
+                                l53.338,302.302c5.005,28.375,29.647,49.047,58.461,49.056h219.192c9.49,0,17.176-7.694,17.176-17.172
+                                c0-9.486-7.686-17.18-17.176-17.18H209.906c-12.133,0.009-22.536-8.725-24.642-20.672l-7.461-42.299h244.342
+                                c24.189,0,45.174-16.691,50.606-40.262l22.967-99.523C499.118,167.887,495.93,152.424,486.998,140.232z"/>
+                            <path class="st0" d="M223.012,438.122c-20.402,0-36.935,16.554-36.935,36.948c0,20.394,16.533,36.931,36.935,36.931
+                                c20.401,0,36.944-16.537,36.944-36.931C259.955,454.676,243.413,438.122,223.012,438.122z"/>
+                            <path class="st0" d="M387.124,438.122c-20.406,0-36.935,16.554-36.935,36.948c0,20.394,16.529,36.931,36.935,36.931
+                                c20.402,0,36.944-16.537,36.944-36.931C424.068,454.676,407.526,438.122,387.124,438.122z"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <div class="hide" id="shopping-cart-contents">
+                        <div class="shopping-cart-items">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="checkout-button-container">
+                            <button type="submit" onclick="checkout()">Checkout</button>
+                        </div>
+                    </div>                     
+                </li>
+            </ul>
+        </div>  
+    </nav>
+
+    <main>
+        <section class="welcome-message">
+            <div class="bg-img center">
+                <h1 class="welcome">Contact Us</h1>
+            </div>
+        </section>
+
+        <section class="contact-card-container">
+            <div class="contact-card">
+                <div class="store-information">
+                    <div class="business-hours">
+                        <div class="hour">
+                            <div class="hours-logo">
+                                <svg height="30px" width="30px" viewBox="0 0 142.447 142.447">
+                                    <g>
+                                        <path class="icon" d="M71.224,0C31.951,0,0,31.951,0,71.224s31.951,71.224,71.224,71.224s71.224-31.951,71.224-71.224
+                                            S110.496,0,71.224,0z M71.224,127.447C40.222,127.447,15,102.226,15,71.224S40.222,15,71.224,15s56.224,25.222,56.224,56.224
+                                            S102.226,127.447,71.224,127.447z"/>
+                                        <path class="icon" d="M100.923,72.016H71.724V46.724c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v32.792
+                                            c0,4.143,3.357,7.5,7.5,7.5h36.699c4.143,0,7.5-3.357,7.5-7.5S105.065,72.016,100.923,72.016z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="black">Business Hours</span>
+                        </div>
+                        <div class="hours">
+                            <p class="hour-container"><span class="day">Sunday</span>  <span class="time">1:30PM - 9:30PM</span></p>
+                            <p class="hour-container"><span class="day">Monday</span> <span class="time">12:00PM - 9:30PM</span></p>
+                            <p class="hour-container"><span class="day">Tuesday</span>  <span class="time">CLOSED</span></p>
+                            <p class="hour-container"><span class="day">Wednesday</span>  <span class="time">12:00PM - 9:30PM</span></p>
+                            <p class="hour-container"><span class="day">Thursday</span>  <span class="time">12:00PM - 9:30PM</span></p>
+                            <p class="hour-container"><span class="day">Friday</span>  <span class="time">12:00PM - 9:30PM</span></p>
+                            <p class="hour-container" id="sat"><span class="day">Saturday</span>  <span class="time">12:00PM - 9:30PM</span></p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="phone-number">
+                        <div class="phone-logo">
+                            <svg height="30px" width="30px" viewBox="0 0 512 512">
+                            <g>
+                                <path class="icon" d="M256,47.18C127.063,47.18,0,97.628,0,155.555c0,49.742,0,54.334,0,54.644c0,13.168,10.67,23.838,23.838,23.838
+                                    h90.602c13.168,0,23.837-10.67,23.837-23.838v-41.116c0-12,8.93-22.132,20.83-23.647c0,0,32.619-6.7,96.893-6.7
+                                    s96.892,6.7,96.892,6.7c11.901,1.514,20.83,11.647,20.83,23.647V210.2c0,13.168,10.67,23.838,23.837,23.838h90.602
+                                    c13.168,0,23.838-10.67,23.838-23.838c0-0.311,0-4.903,0-54.644C512,97.628,384.938,47.18,256,47.18z"/>
+                                <path class="icon" d="M348.499,210.2v-39.913l-0.687-0.142c-0.247-0.049-31.55-6.184-91.812-6.184
+                                    c-60.262,0-91.564,6.134-91.876,6.198l-0.622,0.127V210.2c0,27.057-22.012,49.062-49.062,49.062H51.39v141.992
+                                    c0,35.109,28.458,63.566,63.56,63.566H397.05c35.102,0,63.56-28.458,63.56-63.566V259.262h-63.05
+                                    C370.51,259.262,348.499,237.257,348.499,210.2z M331.057,368.105v33.92h-33.913v-33.92H331.057z M331.057,314.465v33.921h-33.913
+                                    v-33.921H331.057z M331.057,260.833v33.913h-33.913v-33.913H331.057z M272.96,368.105v33.92h-33.913v-33.92H272.96z
+                                    M272.96,314.465v33.921h-33.913v-33.921H272.96z M239.047,294.746v-33.913h33.913v33.913H239.047z M214.863,368.105v33.92H180.95
+                                    v-33.92H214.863z M214.863,314.465v33.921H180.95v-33.921H214.863z M214.863,260.833v33.913H180.95v-33.913H214.863z"/>
+                            </g>
+                            </svg>
+                        </div>
+                        <a href="tel:+7145540084" ><p class="phone-text black">(714) 554 - 0084</p></a>
+                    </div>
+
+                    <hr>
+                    
+                    <div class="address">
+                        <div class="address-logo">
+                            <svg class="icon" width="30px" height="30px" viewBox="0 0 395.71 395.71">
+                            <g>
+                                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                                    c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                                    C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                                    c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"/>
+                            </g>
+                            </svg>
+                        </div>
+                        <a target="_blank" href="https://goo.gl/maps/HycNaGUqJFVfSijf9"><p class="black">13917 Harbor Blvd, Garden Grove, CA 92843</p></a>
+                    </div>
+                    
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.9842445301174!2d-117.9209849!3d33.761073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd80bb816dee7%3A0xa0cc787850d26be8!2sHarbor%20Pizza!5e0!3m2!1sen!2sus!4v1676880955856!5m2!1sen!2sus" width="379" height="351" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="endorsement">This Site Was Designed And Developed By <a href="#">Arya Namiranian</a></p>
+            <p class="copyright">&#169; 2023 Harbor Pizza. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

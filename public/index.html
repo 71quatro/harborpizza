@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/harbor-pizza-logo-image.png" type="image/x-icon">
+    <title>Harbor Pizza</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="store-name"><a class="navlink" href="index.html">Harbor Pizza</a></div>
+        <div class="menu-items">
+            <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="page-links">
+                <li><a class="navlink border-bottom" href="index.html">Home</a></li>
+                <li><a class="navlink" href="menu.html">Menu</a></li>
+                <li><a class="navlink" href="contact.html">Contact</a></li>
+                <li>
+                    <div id="shoppingCartIcon" class="svg-container">
+                        <svg height="20px" width="20px" 
+                            viewBox="0 0 512 512"  xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M486.998,140.232c-8.924-12.176-22.722-19.878-37.785-21.078l-311.616-24.68l-5.665-32.094
+                                c-5.179-29.305-28.497-51.998-57.932-56.352l-5.662-0.845L34.65,0.185c-9.385-1.378-18.118,5.09-19.51,14.475
+                                c-1.395,9.393,5.086,18.127,14.471,19.514v-0.008l39.357,5.834l0.009,0.026c14.788,2.164,26.526,13.586,29.131,28.324
+                                l53.338,302.302c5.005,28.375,29.647,49.047,58.461,49.056h219.192c9.49,0,17.176-7.694,17.176-17.172
+                                c0-9.486-7.686-17.18-17.176-17.18H209.906c-12.133,0.009-22.536-8.725-24.642-20.672l-7.461-42.299h244.342
+                                c24.189,0,45.174-16.691,50.606-40.262l22.967-99.523C499.118,167.887,495.93,152.424,486.998,140.232z"/>
+                            <path class="st0" d="M223.012,438.122c-20.402,0-36.935,16.554-36.935,36.948c0,20.394,16.533,36.931,36.935,36.931
+                                c20.401,0,36.944-16.537,36.944-36.931C259.955,454.676,243.413,438.122,223.012,438.122z"/>
+                            <path class="st0" d="M387.124,438.122c-20.406,0-36.935,16.554-36.935,36.948c0,20.394,16.529,36.931,36.935,36.931
+                                c20.402,0,36.944-16.537,36.944-36.931C424.068,454.676,407.526,438.122,387.124,438.122z"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <div class="hide" id="shopping-cart-contents">
+                        <div class="shopping-cart-items">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="checkout-button-container">
+                            <button type="submit" onclick="checkout()">Checkout</button>
+                        </div>
+                    </div>                     
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="welcome-message">
+        <div class="bg-img">
+            <h1 class="welcome">Welcome to Harbor Pizza</h1>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class=" message">
+            <p>In the mood for a fresh hot pizza? Look no further because Harbor Pizza has got you covered!  We know you have a lot of choices when it comes to pizza, which is why we do our best to offer fast, fresh, and delicious pizzas every time. Try our 1-topping Pizza today and see why it's such a local favorite. Bulk up your meal with our famous calzones. It's the best way to make sure you don't go away hungry. If you love pizza and you care about indulging in the best crust, cheeses, and toppings, then stop by Harbor Pizza and order yours today!</p>
+        </div>
+        <div class="order-container">
+            <div class="order-btns">
+                <div class="start-order">START ORDERING ONLINE TODAY!</div>
+                <a href="./menu.html"><button type="submit" class="orderBtn" id="order-button">Order Now</button></a>
+            </div>  
+        </div>
+    </section>
+
+    
+    <section class="img-slideshow">
+        <div class="ss">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./imgs/Meatlover.jpg" style="width:100%">
+                    <div class="text">Meatlovers Pizza</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./imgs/spagetti_meatball.png" style="width:100%">
+                    <div class="text">Spagetti with Meatballs</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./imgs/Supreme.jpg" style="width:100%">
+                    <div class="text">Supreme Pizza</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./imgs/pep-pizza.png" style="width:100%">
+                    <div class="text">Pepperoni Pizza</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./imgs/parm-sandwich.png" style="width:100%">
+                    <div class="text">Chicken Parmesan Sandwich</div>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div> 
+        </div>
+        
+        </div>
+    </section>
+    
+    <section class="hours-map">
+        
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p class="endorsement">This Site Was Designed And Developed By <a href="#">Arya Namiranian</a></p>
+            <p class="copyright">&#169; 2023 Harbor Pizza. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="./slideshow.js"></script>
+</body>
+</html>
