@@ -150,7 +150,7 @@
 }
 
 @media only screen and (max-width:480px){
-    .start-order, .orderBtn{
+    .start-order,.orderBtna{
         margin-bottom: .5rem;
     }
 }
